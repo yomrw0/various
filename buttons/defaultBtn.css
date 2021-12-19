@@ -17,4 +17,33 @@ html,body {
 button {
     width: 100px;
     height: 100px;
+    background: white;
+}
+/* span {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    z-index: -1;
+} */
+
+button:hover {
+    width: 105px;
+    height: 105px;
+    border-right: 5px solid blue;
+    border-left: 5px solid red;
+    border-top: 5px solid green;
+    border-bottom: 5px solid yellow;
+    transition: linear 1s;
+    animation: sharara 2s;
+}
+
+
+@keyframes sharara {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
