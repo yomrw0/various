@@ -40,6 +40,7 @@ html,body {
 #todoList {
     width: 100%;
     height: 70%;
+    background: pink;
 }
 
 #state {
