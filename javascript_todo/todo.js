@@ -1,3 +1,3 @@
-const qs = selector => { document.querySelector(selector) }
+const qs = selector => document.querySelector(selector);
+const qsa = nodeList => document.querySelectorAll(nodeList);
 
-const qsa = nodeList => { document.querySelectorAll(nodeList) }
