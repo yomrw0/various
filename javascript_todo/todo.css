@@ -36,7 +36,6 @@ html,body {
 #addList {
     width: 100%;
     height: 10%;
-    background: blue;
     display: flex;
 }
 
