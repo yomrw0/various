@@ -4,14 +4,15 @@ const qsa = nodeList => document.querySelectorAll(nodeList);
 const addButton = qs("#addList > button")
 const editButton = qsa("#todoList > .list > button[name=update]");
 const removeButton = qsa("#todoList > .list > button[name=delete]");
-const todoList = qs("#todoList")
-
+const todoObject = qs("#todoList")
 
 function eventButton(e) {
 
 }
 
+
 function insertTodo() {
+    
     `<div class="list" id=${Math.random}>
         <input type="text" disabled>
         <button name="update">수정</button>
@@ -28,7 +29,7 @@ function eventName(event) {
         case "delete":
             return deleteTodo;
         case "all":
-            return 
+            return
         case "progress":
             return 
         case "complete":
