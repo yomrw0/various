@@ -29,3 +29,6 @@ const circle = {
 array[3] // 인덱스가 3. 즉 4번 째 요소이다.
 
 7 / 2 // -> 3.5 자바스크립트는 소수점도 가능합니다.
+
+// "dodo" + "dooo" = "dododooo"
+// "dodo" + 22 = "dodo22"
