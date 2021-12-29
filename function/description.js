@@ -30,5 +30,19 @@ array[3] // 인덱스가 3. 즉 4번 째 요소이다.
 
 7 / 2 // -> 3.5 자바스크립트는 소수점도 가능합니다.
 
+
+// 문자열 + 숫자열을 하면 문자열로 변환됩니다.
 // "dodo" + "dooo" = "dododooo"
 // "dodo" + 22 = "dodo22"
+
+// 함수 정의법
+
+// 함수 선언문
+function func_2(p) { return p*p }
+// 함수 리터럴
+const func_3 = function(p) { return p*p }
+// Function 생성자 (안씁니다..)
+const func_new = new Function("para", "return para*para");
+// 화살표 함수
+const func_4 = p => p*p
+
