@@ -3,7 +3,6 @@ import WriteDate from "./components/WriteDate";
 import FilterBtn from "./components/FilterBtn";
 import Form from "./components/Form";
 import Todo from "./components/Todo";
-import { nanoid } from "nanoid";
 
 export default function App() {
 
@@ -50,10 +49,13 @@ export default function App() {
       />
     ))
 
+  const [count, setCount] = useState(localStorage.length);
+
   function addTask(name) {
-    const newTask = { id: "todo-" + nanoid(), name: name, completed: false };
+    const newTask = { id: count, name: name, completed: false };
     setTasks([...tasks, newTask]);
     localStorage.setItem(newTask.id, JSON.stringify(newTask))
+    setCount(localStorage.length + 1);
   }
 
   function editTask(id, newName) {
