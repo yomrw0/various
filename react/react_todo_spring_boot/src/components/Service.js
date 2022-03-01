@@ -1,5 +1,6 @@
 import axios from "axios";
 const API_Base_url = "http://localhost:8080/"
+
 class Service {
     view() {
         return axios.get(API_Base_url + 'home')
